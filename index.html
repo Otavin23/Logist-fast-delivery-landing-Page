@@ -14,37 +14,36 @@
     <title>Logis Landing Page</title>
   </head>
   <body>
-    <header class="flex-center">
+    <header class="header flex-center">
       <div class="container flex-end">
-        <h1 class="header__title--white">logis</h1>
-        <nav class="nav__block flex-space-around">
-          <ul class="nav__element flex-space-around">
-            <li><a class="title__home" href="#">home</a></li>
-            <li><a class="title__color--gray" href="#">about</a></li>
-            <li><a class="title__color--gray" href="#">services</a></li>
-            <li><a class="title__color--gray" href="#">pricing</a></li>
+        <span class="header__logo">Logis</span>
+        <nav class="header__nav flex-space-around">
+          <ul class="nav__links flex-space-around">
+            <li><a class="link link--active" href="#">home</a></li>
+            <li><a class="link" href="#">about</a></li>
+            <li><a class="link" href="#">services</a></li>
+            <li><a class="link" href="#">pricing</a></li>
 
             <li class="dropwdown">
-              <a class="title__color--gray" href="#">
-                <span>drop down</span>
+              <span class="dropdown__item">
+                drop down
                 <img src="./assets/icons8-seta-para-expandir-50.png" alt="" />
-              </a>
+              </span>
 
               <div class="dropdown__content">
                 <ul>
                   <li><a href="#">drop down 1</a></li>
 
-                  <li class="drop__down--secondary">
-                    <a href="#">
-                      <span>drop down down</span>
+                  <!-- <li class="dropdown dropdown--sub">
+                    <span class="dropdown__item">
+                      drop down down
                       <img
                         class="dropdown__image--left"
                         src="./assets/icons8-seta-para-expandir-31.png"
                         alt=""
                       />
-                    </a>
-
-                    <div class="dropdown__block__content">
+                    </span>
+                    <div class="dropdown__content--sub">
                       <ul>
                         <li><a href="#">drop down 1</a></li>
                         <li><a href="#">drop down 2</a></li>
@@ -54,6 +53,7 @@
                       </ul>
                     </div>
                   </li>
+                -->
 
                   <li><a href="#">drop down 2</a></li>
                   <li><a href="#">drop down 3</a></li>
@@ -61,72 +61,73 @@
                 </ul>
               </div>
             </li>
-
-            <li><a class="title__color--gray" href="#">contact</a></li>
           </ul>
-          <button class="button__color--blue">get a quote</button>
+          <div class="nav__button-group">
+            <button class="button button--transparent">contact</button>
+            <button class="button button--blue">get a quote</button>
+          </div>
         </nav>
       </div>
     </header>
 
-    <section class="fast__delivery flex-center background">
-      <img src="./assets/hero-bg.png" alt="" />
+    <section class="hero background flex-center">
+      <div class="container d-flex">
+        <div class="hero__content">
+          <div class="hero__title">
+            <h2>Seu parceiro de entrega rápida e relâmpago</h2>
+            <p>
+              Facere distinctio molestiae nisi fugit tenetur repellat non
+              praesentium nesciunt optio quis sit odio nemo quisquam. eius quos
+              reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam
+              occaecati odio est possimus vel reprehenderit
+            </p>
+            <form class="hero__form">
+              <input type="text" placeholder="ZIP code or CitY" />
+              <button>search</button>
+            </form>
 
-      <div class="delivery__block container">
-        <div class="fast__block">
-          <h2>Seu parceiro de entrega rápida e relâmpago</h2>
-          <p>
-            Facere distinctio molestiae nisi fugit tenetur repellat non
-            praesentium nesciunt optio quis sit odio nemo quisquam. eius quos
-            reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam
-            occaecati odio est possimus vel reprehenderit
-          </p>
-          <form class="form__zipCode">
-            <input type="text" placeholder="ZIP code or CitY" />
-            <button>search</button>
-          </form>
-          <div class="block__increment flex-space-around">
-            <div class="increment__element flex-column">
-              <span class="increment__title" akhi="232">0</span>
-              <span class="increment__border--blue"></span>
-              <span class="increment__type">clients</span>
-            </div>
+            <div class="hero__increment flex-space-around">
+              <div class="flex-column">
+                <span class="increment__title" akhi="232">0</span>
+                <span class="increment__border--blue"></span>
+                <span class="increment__color">clients</span>
+              </div>
 
-            <div class="increment__element flex-column">
-              <span class="increment__title" akhi="521">0</span>
-              <span class="increment__border--blue"></span>
-              <span class="increment__type">projects</span>
-            </div>
+              <div class="increment__element flex-column">
+                <span class="increment__title" akhi="521">0</span>
+                <span class="increment__border--blue"></span>
+                <span class="increment__color">projects</span>
+              </div>
 
-            <div class="increment__element flex-column">
-              <span class="increment__title" akhi="1453">0</span>
-              <span class="increment__border--blue"></span>
-              <span class="increment__type">support</span>
-            </div>
+              <div class="increment__element flex-column">
+                <span class="increment__title" akhi="1453">0</span>
+                <span class="increment__border--blue"></span>
+                <span class="increment__color">support</span>
+              </div>
 
-            <div class="increment__element flex-column">
-              <span class="increment__title" akhi="32">0</span>
-              <span class="increment__border--blue"></span>
-              <span class="increment__type">workers</span>
+              <div class="increment__element flex-column">
+                <span class="increment__title" akhi="32">0</span>
+                <span class="increment__border--blue"></span>
+                <span class="increment__color">workers</span>
+              </div>
             </div>
           </div>
         </div>
-        <img src="./assets/hero-img.svg" alt="" />
-      </div>
 
-      <button class="scrollTop" onclick="backScrollTop()">
-        <img src="./assets/icons8-acima-24.png" alt="" />
-      </button>
+        <div class="hero__image">
+          <img src="./assets/hero-img.svg" alt="" />
+        </div>
+      </div>
     </section>
 
-    <section class="block__fast background flex-center">
-      <div class="block__container container">
+    <section class="fast__delivery background flex-center">
+      <div class="container--width container d-space-between">
         <div class="card__information">
-          <span class="card__image">
+          <div class="card__image">
             <img src="./assets/icons8-shopping-cart-100.png" alt="" />
-          </span>
+          </div>
 
-          <div class="card__info__title">
+          <div class="card__info">
             <span>lorem ipsum</span>
             <p>
               voluptatum dalentiti atque corrupti quos dolores et quas molestias
@@ -141,11 +142,11 @@
         </div>
 
         <div class="card__information">
-          <span class="card__image">
-            <img src="./assets/icons8-caminhão-100.png" alt="" />
-          </span>
+          <div class="card__image">
+            <img src="./assets/icons8-shopping-cart-100.png" alt="" />
+          </div>
 
-          <div class="card__info__title">
+          <div class="card__info">
             <span>lorem ipsum</span>
             <p>
               voluptatum dalentiti atque corrupti quos dolores et quas molestias
@@ -160,11 +161,11 @@
         </div>
 
         <div class="card__information">
-          <span class="card__image">
-            <img src="./assets/icons8-hand-truck-100.png" alt="" />
-          </span>
+          <div class="card__image">
+            <img src="./assets/icons8-shopping-cart-100.png" alt="" />
+          </div>
 
-          <div class="card__info__title">
+          <div class="card__info">
             <span>lorem ipsum</span>
             <p>
               voluptatum dalentiti atque corrupti quos dolores et quas molestias
@@ -181,8 +182,8 @@
     </section>
 
     <section class="about__us background flex-center">
-      <div class="abouts__us__block container">
-        <div class="block__information">
+      <div class="container d-flex">
+        <div class="about__information">
           <h2>sobre nos</h2>
           <p>
             Dolor iure expedita id fuga asperiores qui sunt consequatur minima.
@@ -191,10 +192,11 @@
             veritatis asperiores placeat.
           </p>
 
-          <div class="block__element">
+          <div class="about__element d-flex">
             <span>
               <img src="./assets/icons8-fluxograma-100.png" alt="" />
             </span>
+
             <div class="block__text">
               <span>ullmanco laboris nisi ut aliquip consequat</span>
               <p>
@@ -204,7 +206,7 @@
             </div>
           </div>
 
-          <div class="block__element">
+          <div class="about__element d-flex">
             <span>
               <img src="./assets/icons8-exit-full-screen-100.png" alt="" />
             </span>
@@ -217,11 +219,11 @@
             </div>
           </div>
 
-          <div class="block__element">
+          <div class="about__element d-flex">
             <span>
               <img src="./assets/icons8-conectado-100.png" alt="" />
             </span>
-            <div class="block__text">
+            <div class="about__text">
               <span>ullmanco laboris nisi ut aliquip consequat</span>
               <p>
                 Magni facilis facilis repellendus cum excepturi quaerat
@@ -231,19 +233,20 @@
           </div>
         </div>
 
-        <span class="about__image">
+        <div class="about__image">
           <img src="./assets/about.jpg" alt="" />
-        </span>
+        </div>
       </div>
     </section>
 
     <section class="our__services background flex-center">
-      <div class="our__services__container container">
-        <div class="our__services__title flex-column">
+      <div class="container">
+        <div class="our__services__title d-space-between">
           <h2>our services</h2>
           <span></span>
         </div>
-        <div class="block__cards__services">
+
+        <div class="cards__content flex-">
           <div class="card__element">
             <span>
               <img src="./assets/storage-service.jpg" alt="" />
@@ -264,7 +267,7 @@
             </span>
 
             <div class="cards__information__services">
-              <span>storage</span>
+              <span>logistics</span>
               <p>
                 Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
                 quia voluptas quisquam repellendus temporibus itaqueofficiis
@@ -278,7 +281,7 @@
             </span>
 
             <div class="cards__information__services">
-              <span>storage</span>
+              <span>cargo</span>
               <p>
                 Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
                 quia voluptas quisquam repellendus temporibus itaqueofficiis
@@ -293,7 +296,7 @@
             </span>
 
             <div class="cards__information__services">
-              <span>storage</span>
+              <span>trucking</span>
               <p>
                 Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
                 quia voluptas quisquam repellendus temporibus itaqueofficiis
@@ -307,7 +310,7 @@
             </span>
 
             <div class="cards__information__services">
-              <span>storage</span>
+              <span>packaging</span>
               <p>
                 Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
                 quia voluptas quisquam repellendus temporibus itaqueofficiis
@@ -321,7 +324,7 @@
             </span>
 
             <div class="cards__information__services">
-              <span>storage</span>
+              <span>warehousing</span>
               <p>
                 Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
                 quia voluptas quisquam repellendus temporibus itaqueofficiis
@@ -330,6 +333,48 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="action background flex-center">
+      <div class="container flex-center">
+        <div class="action__information">
+          <h2>call to action</h2>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <button>call to action</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features background background--white">
+      <div class="container">
+        <div class="features__right">
+          <img src="./assets/features-1.jpg" alt="" />
+          <div class="features__information">
+            <h3>
+              sunt consequatur ad ut est nulla consectetur reiciendis animi
+              voluptas
+            </h3>
+            <p>
+              Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus
+              quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas
+              dolor doloremque.
+            </p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </section>
 
