@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Logis Landing Page</title>
+  </head>
+  <body>
+    <header class="flex-center">
+      <div class="container flex-end">
+        <h1 class="header__title--white">logis</h1>
+        <nav class="nav__block flex-space-around">
+          <ul class="nav__element flex-space-around">
+            <li><a class="title__home" href="#">home</a></li>
+            <li><a class="title__color--gray" href="#">about</a></li>
+            <li><a class="title__color--gray" href="#">services</a></li>
+            <li><a class="title__color--gray" href="#">pricing</a></li>
+
+            <li class="dropwdown">
+              <a class="title__color--gray" href="#">
+                <span>drop down</span>
+                <img src="./assets/icons8-seta-para-expandir-50.png" alt="" />
+              </a>
+
+              <div class="dropdown__content">
+                <ul>
+                  <li><a href="#">drop down 1</a></li>
+
+                  <li class="drop__down--secondary">
+                    <a href="#">
+                      <span>drop down down</span>
+                      <img
+                        class="dropdown__image--left"
+                        src="./assets/icons8-seta-para-expandir-31.png"
+                        alt=""
+                      />
+                    </a>
+
+                    <div class="dropdown__block__content">
+                      <ul>
+                        <li><a href="#">drop down 1</a></li>
+                        <li><a href="#">drop down 2</a></li>
+                        <li><a href="#">drop down 3</a></li>
+                        <li><a href="#">drop down 4</a></li>
+                        <li><a href="#">drop down 5</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li><a href="#">drop down 2</a></li>
+                  <li><a href="#">drop down 3</a></li>
+                  <li><a href="#">drop down 4</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><a class="title__color--gray" href="#">contact</a></li>
+          </ul>
+          <button class="button__color--blue">get a quote</button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="fast__delivery flex-center background">
+      <img src="./assets/hero-bg.png" alt="" />
+
+      <div class="delivery__block container">
+        <div class="fast__block">
+          <h2>Seu parceiro de entrega rápida e relâmpago</h2>
+          <p>
+            Facere distinctio molestiae nisi fugit tenetur repellat non
+            praesentium nesciunt optio quis sit odio nemo quisquam. eius quos
+            reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam
+            occaecati odio est possimus vel reprehenderit
+          </p>
+          <form class="form__zipCode">
+            <input type="text" placeholder="ZIP code or CitY" />
+            <button>search</button>
+          </form>
+          <div class="block__increment flex-space-around">
+            <div class="increment__element flex-column">
+              <span class="increment__title" akhi="232">0</span>
+              <span class="increment__border--blue"></span>
+              <span class="increment__type">clients</span>
+            </div>
+
+            <div class="increment__element flex-column">
+              <span class="increment__title" akhi="521">0</span>
+              <span class="increment__border--blue"></span>
+              <span class="increment__type">projects</span>
+            </div>
+
+            <div class="increment__element flex-column">
+              <span class="increment__title" akhi="1453">0</span>
+              <span class="increment__border--blue"></span>
+              <span class="increment__type">support</span>
+            </div>
+
+            <div class="increment__element flex-column">
+              <span class="increment__title" akhi="32">0</span>
+              <span class="increment__border--blue"></span>
+              <span class="increment__type">workers</span>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/hero-img.svg" alt="" />
+      </div>
+
+      <button class="scrollTop" onclick="backScrollTop()">
+        <img src="./assets/icons8-acima-24.png" alt="" />
+      </button>
+    </section>
+
+    <section class="block__fast background flex-center">
+      <div class="block__container container">
+        <div class="card__information">
+          <span class="card__image">
+            <img src="./assets/icons8-shopping-cart-100.png" alt="" />
+          </span>
+
+          <div class="card__info__title">
+            <span>lorem ipsum</span>
+            <p>
+              voluptatum dalentiti atque corrupti quos dolores et quas molestias
+              excepturi sint occaecati cupditate non provident
+            </p>
+
+            <button>
+              learn more
+              <img src="./assets/icons8-right-arrow-30.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="card__information">
+          <span class="card__image">
+            <img src="./assets/icons8-caminhão-100.png" alt="" />
+          </span>
+
+          <div class="card__info__title">
+            <span>lorem ipsum</span>
+            <p>
+              voluptatum dalentiti atque corrupti quos dolores et quas molestias
+              excepturi sint occaecati cupditate non provident
+            </p>
+
+            <button>
+              learn more
+              <img src="./assets/icons8-right-arrow-30.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="card__information">
+          <span class="card__image">
+            <img src="./assets/icons8-hand-truck-100.png" alt="" />
+          </span>
+
+          <div class="card__info__title">
+            <span>lorem ipsum</span>
+            <p>
+              voluptatum dalentiti atque corrupti quos dolores et quas molestias
+              excepturi sint occaecati cupditate non provident
+            </p>
+
+            <button>
+              learn more
+              <img src="./assets/icons8-right-arrow-30.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about__us background flex-center">
+      <div class="abouts__us__block container">
+        <div class="block__information">
+          <h2>sobre nos</h2>
+          <p>
+            Dolor iure expedita id fuga asperiores qui sunt consequatur minima.
+            Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam
+            itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis
+            veritatis asperiores placeat.
+          </p>
+
+          <div class="block__element">
+            <span>
+              <img src="./assets/icons8-fluxograma-100.png" alt="" />
+            </span>
+            <div class="block__text">
+              <span>ullmanco laboris nisi ut aliquip consequat</span>
+              <p>
+                Magni facilis facilis repellendus cum excepturi quaerat
+                praesentium libre trade
+              </p>
+            </div>
+          </div>
+
+          <div class="block__element">
+            <span>
+              <img src="./assets/icons8-exit-full-screen-100.png" alt="" />
+            </span>
+            <div class="block__text">
+              <span>ullmanco laboris nisi ut aliquip consequat</span>
+              <p>
+                Magni facilis facilis repellendus cum excepturi quaerat
+                praesentium libre trade
+              </p>
+            </div>
+          </div>
+
+          <div class="block__element">
+            <span>
+              <img src="./assets/icons8-conectado-100.png" alt="" />
+            </span>
+            <div class="block__text">
+              <span>ullmanco laboris nisi ut aliquip consequat</span>
+              <p>
+                Magni facilis facilis repellendus cum excepturi quaerat
+                praesentium libre trade
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <span class="about__image">
+          <img src="./assets/about.jpg" alt="" />
+        </span>
+      </div>
+    </section>
+
+    <section class="our__services background flex-center">
+      <div class="our__services__container container">
+        <div class="our__services__title flex-column">
+          <h2>our services</h2>
+          <span></span>
+        </div>
+        <div class="block__cards__services">
+          <div class="card__element">
+            <span>
+              <img src="./assets/storage-service.jpg" alt="" />
+            </span>
+
+            <div class="cards__information__services">
+              <span>storage</span>
+              <p>
+                Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
+                quia voluptas quisquam repellendus temporibus itaqueofficiis
+                odit
+              </p>
+            </div>
+          </div>
+          <div class="card__element">
+            <span>
+              <img src="./assets/logistics-service.jpg" alt="" />
+            </span>
+
+            <div class="cards__information__services">
+              <span>storage</span>
+              <p>
+                Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
+                quia voluptas quisquam repellendus temporibus itaqueofficiis
+                odit
+              </p>
+            </div>
+          </div>
+          <div class="card__element">
+            <span>
+              <img src="./assets/cargo-service.jpg" alt="" />
+            </span>
+
+            <div class="cards__information__services">
+              <span>storage</span>
+              <p>
+                Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
+                quia voluptas quisquam repellendus temporibus itaqueofficiis
+                odit
+              </p>
+            </div>
+          </div>
+
+          <div class="card__element">
+            <span>
+              <img src="./assets/trucking-service.jpg" alt="" />
+            </span>
+
+            <div class="cards__information__services">
+              <span>storage</span>
+              <p>
+                Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
+                quia voluptas quisquam repellendus temporibus itaqueofficiis
+                odit
+              </p>
+            </div>
+          </div>
+          <div class="card__element">
+            <span>
+              <img src="./assets/packaging-service.jpg" alt="" />
+            </span>
+
+            <div class="cards__information__services">
+              <span>storage</span>
+              <p>
+                Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
+                quia voluptas quisquam repellendus temporibus itaqueofficiis
+                odit
+              </p>
+            </div>
+          </div>
+          <div class="card__element">
+            <span>
+              <img src="./assets/warehousing-service.jpg" alt="" />
+            </span>
+
+            <div class="cards__information__services">
+              <span>storage</span>
+              <p>
+                Cumque eos in qui numquam. Aut aspernatur perferendis sed atque
+                quia voluptas quisquam repellendus temporibus itaqueofficiis
+                odit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
