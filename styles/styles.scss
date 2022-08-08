@@ -121,6 +121,36 @@
 .background--white {
   background: #fff;
 }
+.ul__prices {
+  list-style: none;
+  li {
+    color: #6c757d;
+    padding-top: 1.5rem;
+    line-height: 20px;
+    img {
+      padding-right: 0.5rem;
+      max-width: 15px;
+    }
+  }
+}
+
+.ul__prices {
+  list-style: none;
+  li {
+    color: #6c757d;
+    padding-top: 1.5rem;
+    line-height: 20px;
+    img {
+      padding-right: 0.5rem;
+      max-width: 15px;
+    }
+  }
+}
+
+.price--error {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
 
 /*===========================================================================
     Header
@@ -609,12 +639,16 @@
    Features
 ===========================================================================*/
 
+.features {
+  height: 0%;
+}
 .features__right {
   padding-top: 5rem;
   img {
     max-height: 300px;
   }
 }
+
 .features__information {
   padding-left: 2rem;
   height: 90%;
@@ -627,6 +661,7 @@
     margin-bottom: 1.4rem;
   }
 }
+
 .ul__features {
   margin-top: 1rem;
   list-style: none;
@@ -640,6 +675,7 @@
     }
   }
 }
+
 .features__title {
   color: #001973;
   font-weight: 600;
@@ -653,10 +689,93 @@
     max-height: 300px;
   }
 }
+
 .features__information__left {
   max-width: 60%;
 
   p {
     margin: 1rem 0 1rem 0;
+  }
+}
+
+/*===========================================================================
+   Pricing
+===========================================================================*/
+
+.title__pricing {
+  padding-top: 10rem;
+}
+
+.cards__pricings {
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+}
+
+.card__pricing {
+  background: #fff;
+  height: 520px;
+  width: 350px;
+  box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+}
+
+.card__container {
+  height: 80%;
+  width: 80%;
+  span {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: var(--color-secondary);
+    text-transform: capitalize;
+  }
+  h3 {
+    margin-top: 1rem;
+    font-size: 48px;
+    color: var(--color-primary);
+    font-weight: 400;
+    font-family: var(--font-primary);
+    margin-bottom: 25px;
+
+    sup {
+      font-size: 28px;
+    }
+    span {
+      color: rgba(108, 117, 125, 0.8);
+      font-size: 18px;
+      text-transform: lowercase;
+      font-weight: 400;
+    }
+  }
+}
+
+.ul__prices {
+  list-style: none;
+  li {
+    color: #6c757d;
+    padding-top: 1.5rem;
+    line-height: 20px;
+    img {
+      padding-right: 0.5rem;
+      max-width: 15px;
+    }
+  }
+}
+
+.button__prices {
+  border: 1px solid var(--color-primary);
+  padding: 12px 35px;
+  border-radius: 4px;
+  color: var(--color-primary);
+  transition: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-primary);
+  background: transparent;
+  cursor: pointer;
+  margin-top: 2.5rem;
+  &:hover {
+    color: #fff;
+    background: var(--color-primary);
   }
 }
