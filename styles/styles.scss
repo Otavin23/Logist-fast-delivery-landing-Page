@@ -716,7 +716,13 @@
   background: #fff;
   height: 520px;
   width: 350px;
+  border-radius: 6px;
   box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+}
+
+.card--border {
+  border-top: 2px solid var(--color-primary);
+  border-width: 4px;
 }
 
 .card__container {
@@ -778,4 +784,9 @@
     color: #fff;
     background: var(--color-primary);
   }
+}
+
+.button--blue {
+  background: var(--color-primary);
+  color: white;
 }
