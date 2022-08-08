@@ -115,11 +115,6 @@
   color: var(--text-primary);
 }
 
-.container--width {
-  height: 70%;
-  display: flex;
-}
-
 .background--white {
   background: #fff;
 }
@@ -454,7 +449,7 @@
 }
 
 /*===========================================================================
-   About US
+   Our Services
 ===========================================================================*/
 .our__services {
   height: 100%;
@@ -584,4 +579,57 @@
 
 /*===========================================================================
    Features
-===========================================================================*//*# sourceMappingURL=styles.css.map */
+===========================================================================*/
+.features__right {
+  padding-top: 5rem;
+}
+.features__right img {
+  max-height: 300px;
+}
+
+.features__information {
+  padding-left: 2rem;
+  height: 90%;
+}
+.features__information p {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.ul__features {
+  margin-top: 1rem;
+  list-style: none;
+}
+.ul__features li {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.ul__features li img {
+  max-width: 15px;
+  margin-right: 0.6rem;
+}
+
+.features__title {
+  color: #001973;
+  font-weight: 600;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+.features__left {
+  padding-top: 8rem;
+}
+.features__left img {
+  max-height: 300px;
+}
+
+.features__information__left {
+  max-width: 60%;
+}
+.features__information__left p {
+  margin: 1rem 0 1rem 0;
+}/*# sourceMappingURL=styles.css.map */
