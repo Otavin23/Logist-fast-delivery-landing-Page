@@ -43,6 +43,12 @@
 /*===========================================================================
     Utility classes
 ===========================================================================*/
+.f-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -672,6 +678,10 @@
 /*===========================================================================
    Pricing
 ===========================================================================*/
+.pricing {
+  padding-bottom: 7rem;
+}
+
 .title__pricing {
   padding-top: 10rem;
 }
@@ -684,8 +694,9 @@
 
 .card__pricing {
   background: #fff;
-  height: 520px;
+  height: 100%;
   width: 350px;
+  padding-bottom: 2rem;
   border-radius: 6px;
   box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
 }
@@ -758,4 +769,88 @@
 .button--blue {
   background: var(--color-primary);
   color: white;
+}
+
+/*===========================================================================
+   Footer
+===========================================================================*/
+.footer {
+  height: 55vh;
+}
+
+.footer__information {
+  max-width: 40%;
+  height: 100%;
+  padding-top: 2rem;
+}
+.footer__information h2 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: clamp(35px, 1vh, 35px);
+}
+.footer__information p {
+  padding-top: 0.5rem;
+  color: #fff;
+  font-size: clamp(14px, 1vh, 15px);
+  line-height: 1.2rem;
+}
+
+.footer__image {
+  width: 40%;
+  padding-top: 1rem;
+  height: 40%;
+}
+.footer__image a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.05s ease;
+}
+.footer__image a:hover {
+  border: 1px solid white;
+}
+.footer__image img {
+  width: 20px;
+}
+
+.footer__nav {
+  padding-left: 1.5rem;
+  width: 100%;
+  padding-top: 2.5rem;
+  height: 100%;
+}
+
+.nav__footer {
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  list-style: none;
+}
+.nav__footer h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: clamp(17px, 1vh, 17px);
+  padding-bottom: 1rem;
+}
+.nav__footer li {
+  margin-top: 0.8rem;
+}
+.nav__footer a {
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.nav__footer a:hover {
+  color: #fff;
+}
+
+.nav__footer--white a {
+  color: #fff;
+}
+
+.nav__footer--padding {
+  padding-top: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
