@@ -88,7 +88,6 @@
 
 .background {
   width: 100%;
-  height: 100vh;
   background: var(--color-secondary);
 }
 
@@ -479,7 +478,18 @@
 
 .fast__delivery {
   background: #fff;
-  height: 50vh;
+  height: 60vh;
+  @media (max-width: 1028px) {
+    height: 0%;
+    padding-bottom: 20rem;
+  }
+}
+
+.fast__delivery__container {
+  @media (max-width: 1028px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card__image {
@@ -495,6 +505,7 @@
   display: flex;
   margin-right: 1.5em;
   height: 80%;
+  margin-top: 3rem;
 }
 
 .card__info {
@@ -513,6 +524,8 @@
     color: #132848;
     font-size: 15px;
     text-transform: capitalize;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   button {
     display: flex;
@@ -547,21 +560,38 @@
 .about__us {
   height: 100vh;
   background: #fff;
+  @media (max-width: 1028px) {
+    height: 100%;
+  }
+}
+
+.about__us__container {
+  @media (max-width: 1028px) {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
 }
 
 .about__information {
   max-width: 520px;
   height: 100%;
+  width: 100%;
+  @media (max-width: 1028px) {
+    margin-top: 1.5rem;
+    max-width: 100%;
+  }
   h2 {
     font-weight: 700;
     color: var(--color-primary);
     font-size: 32px;
-    text-transform: capitalize;
   }
   p {
     margin-top: 1rem;
     margin-bottom: 2.5rem;
     line-height: 1.5rem;
+    @media (max-width: 1028px) {
+      max-width: 80%;
+    }
   }
 }
 
@@ -571,7 +601,6 @@
   img {
     width: 100%;
     height: auto;
-    margin-left: 1rem;
   }
 }
 
@@ -687,6 +716,11 @@
     url("../assets/cta-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width: 1028px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 100%;
+  }
 }
 
 .action__information {
@@ -740,11 +774,24 @@
   img {
     max-height: 300px;
   }
+  @media (max-width: 1028px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .features__information {
   padding-left: 2rem;
   height: 90%;
+  @media (max-width: 1028px) {
+    margin-top: 2.5rem;
+    max-width: 65%;
+    padding: 0;
+  }
 
   p {
     margin-top: 1rem;
@@ -781,6 +828,14 @@
   img {
     max-height: 300px;
   }
+  @media (max-width: 1028px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .features__information__left {
@@ -788,6 +843,9 @@
 
   p {
     margin: 1rem 0 1rem 0;
+  }
+  @media (max-width: 1028px) {
+    margin-top: 1.5rem;
   }
 }
 
@@ -797,6 +855,9 @@
 
 .pricing {
   padding-bottom: 7rem;
+  @media (max-width: 1028px) {
+    padding-top: 25rem;
+  }
 }
 .title__pricing {
   padding-top: 10rem;
@@ -806,6 +867,10 @@
   width: 100%;
   height: 100%;
   padding-top: 3rem;
+  @media (max-width: 1028px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card__pricing {
@@ -815,6 +880,14 @@
   padding-bottom: 2rem;
   border-radius: 6px;
   box-shadow: 0 3px 20px -2px rgb(108 117 125 / 15%);
+  @media (max-width: 1028px) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1.5rem;
+    width: 100%;
+    margin-bottom: 2em;
+  }
 }
 
 .card--border {
@@ -850,6 +923,10 @@
       font-weight: 400;
     }
   }
+  @media (max-width: 1028px) {
+    padding-top: 2rem;
+    width: 100%;
+  }
 }
 
 .ul__prices {
@@ -858,6 +935,7 @@
     color: #6c757d;
     padding-top: 1.5rem;
     line-height: 20px;
+
     img {
       padding-right: 0.5rem;
       max-width: 15px;
