@@ -17,16 +17,3 @@ counters.forEach((counter) => {
 
   animate();
 });
-
-//script scrollTop 
-
-window.addEventListener("scroll", ()=> {
-  const scroll = document.querySelector(".scrollTop")
-  scroll.classList.toggle("active", window.scrollY > 250)
-})
-const backScrollTop = ()=> {
-  window.scrollTo({
-    top: 0, 
-    behavior: 'smooth',
-  })
-}
